@@ -1,0 +1,110 @@
+/* References:
+        1. https://www.youtube.com/watch?v=PwWHL3RyQgk&ab_channel=Skillthrive 
+*/
+
+/* Start of code used from reference 1 */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #ffffff;
+    color: black;
+    font-family: 'Orbitron', sans-serif;
+}
+
+a, h2, button{
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    color: #000000;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 5px;
+    color: black;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 1px solid #F1B82D;
+    flex-wrap: wrap;
+}
+
+#navLinks{
+    transition: all 0.3s ease 0s;
+}
+
+#navLinks:hover{
+    color: #F1B82D;
+}
+
+#themeButton, .mj-buttonHover{
+    padding: 9px 25px;
+    background-color: rgba(241, 184, 45, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+#themeButton:hover, .mj-buttonHover:hover{
+    background-color: rgba(241, 184, 45, 0.8);
+}
+/* End of code used from reference 1 */
+
+#mj-outside{
+    padding: 100px;
+}
+
+#mj-table{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-height: 320px;
+    overflow: auto;
+}
+
+#mj-form{
+    padding-left: 100px;
+    padding-right: 100px;
+}
+
+span{
+    color: #ffffff;
+}
+
+tr {
+   line-height: 40px;
+   min-height: 40px;
+   height: 40px;
+}
+
+mj-date{
+    padding-left: 400px;
+    display: flex;
+    justify-content: center;
+    margin-top:15px;
+    text-align: center;
+}
+
+input[type="button"]{
+    background-color: #F1B82D;
+    color: #24252A;
+    width: 300px;
+    height: 42px;
+}
+
+input[type="date"]{
+    background-color: #F1B82D;
+    color: black;
+    padding: 7px 20px;
+    width: 300px;
+}

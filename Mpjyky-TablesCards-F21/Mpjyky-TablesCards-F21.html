@@ -1,0 +1,166 @@
+<!doctype html>
+<html lang="en">
+    <!--
+        Name:       Mikey Joyce
+        Pawprint:   MPJYKY
+        Date:       9/16/21
+        Challenge: Tables and Cards F21
+
+        References:
+            1. https://getbootstrap.com/docs/4.0/components/navbar/
+            2. https://getbootstrap.com/docs/4.0/components/card/
+    -->
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>MPJYKY Tables and Cards</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+      <link rel="stylesheet" href="Mpjyky-TablesCards-F21.css">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Cairo&display=swap" rel="stylesheet">
+  </head>
+  <body>
+      <!-- Start of code taken from reference 1 -->
+      <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="myBar">
+          <a class="navbar-brand" href="Mpjyky-TablesCards-F21-index.html">Mikey Joyce</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item"><a class="nav-link" href="Mpjyky-TablesCards-F21-Skills.html">Skills</a></li>
+                  <li class="nav-item active"><a class="nav-link" href="Mpjyky-TablesCards-F21.html">Courses</a></li>
+              </ul>
+          </div>
+      </nav>
+      <!-- end of code taken from reference 1 -->
+      <table class="table table-dark">
+          <thead>
+              <tr>
+                  <th class="text-center" colspan="8" id="myHeading">Joyce Course History</th>
+              </tr>
+              <tr>
+                  <th class="text-center" colspan="2"><img src="mizzou.png" alt="Mizzou Tiger" class="tiger"></th>
+                  <th class="text-center" id="myUniversity" colspan="4">University of Missouri</th>
+                  <th class="text-center" colspan="2"><img src="mizzou.png" alt="Mizzou Tiger" class="tiger"></th>
+              </tr>
+              <tr>
+                  <th class="text-center">Department</th>
+                  <th class="text-center">Course Number</th>
+                  <th class="text-center">Course Name</th>
+                  <th class="text-center">Instructor</th>
+                  <th class="text-center">Course Description</th>
+                  <th class="text-center">Grade</th>
+                  <th class="text-center">Credit Hours</th>
+                  <th class="text-center">Knowledge Gained</th>
+              </tr>
+          </thead>
+          <tbody>
+              <tr>
+                  <td class="text-center bg-warning text-dark myFont" rowspan="5" id="myMajor">Computer Science</td>
+                  <td class="text-center myFont">3050</td>
+                  <td class="text-center myFont">Advanced Algorithm Design</td>
+                  <td class="text-center myFont">Youssef Saab</td>
+                  <td class="text-center myFont">Use C to implement advanced algorithms.</td>
+                  <td class="text-center myFont">B+</td>
+                  <td class="text-center myFont">3</td>
+                  <td class="text-center myFont">DFS, BFS, SCCs, trees, etc.</td>
+              </tr>
+              <tr>
+                  <td class="text-center myFont">2050</td>
+                  <td class="text-center myFont">Algorithm Design 2</td>
+                  <td class="text-center myFont">Jeff Uhlmann</td>
+                  <td class="text-center myFont">Use C to implement advanced data structures.</td>
+                  <td class="text-center myFont">C+</td>
+                  <td class="text-center myFont">4</td>
+                  <td class="text-center myFont">Linked lists, queues, stacks, etc.</td>
+              </tr>
+              <tr>
+                  <td class="text-center myFont">1050</td>
+                  <td class="text-center myFont">Algorithm Design 1</td>
+                  <td class="text-center myFont">Jim Ries</td>
+                  <td class="text-center myFont">Learn C programming language.</td>
+                  <td class="text-center myFont">B</td>
+                  <td class="text-center myFont">4</td>
+                  <td class="text-center myFont">C</td>
+              </tr>
+              <tr>
+                  <td class="text-center myFont">3330</td>
+                  <td class="text-center myFont">Object Oriented Programming</td>
+                  <td class="text-center myFont">Prof Wergeles</td>
+                  <td class="text-center myFont">Learn OOP concepts through Java.</td>
+                  <td class="text-center myFont">B+</td>
+                  <td class="text-center myFont">3</td>
+                  <td class="text-center myFont">Java</td>
+              </tr>
+              <tr>
+                  <td class="text-center myFont">3530</td>
+                  <td class="text-center myFont">Unix Operating Systems</td>
+                  <td class="text-center myFont">Ronny Bazan</td>
+                  <td class="text-center myFont">Learn the Linux shell.</td>
+                  <td class="text-center myFont">B+</td>
+                  <td class="text-center myFont">3</td>
+                  <td class="text-center myFont">Linux (RHEL)</td>
+              </tr>
+              <tr>
+                  <td class="text-center bg-primary myFont">Electrical Engineering</td>
+                  <td class="text-center myFont">2210</td>
+                  <td class="text-center myFont">Intro to Logic Systems</td>
+                  <td class="text-center myFont">Justin Legarsky</td>
+                  <td class="text-center myFont">Learn logic of computers and binary number system</td>
+                  <td class="text-center myFont">A+</td>
+                  <td class="text-center myFont">3</td>
+                  <td class="text-center myFont">Binary number arithmetic</td>
+              </tr>
+              <tr>
+                  <td class="text-center bg-danger myFont">Information Technology</td>
+                  <td class="text-center myFont">2810</td>
+                  <td class="text-center myFont">Fundamentals of Network Technology</td>
+                  <td class="text-center myFont">Fang Wang</td>
+                  <td class="text-center myFont">Learn to setup and maintain computer networks.</td>
+                  <td class="text-center myFont">A-</td>
+                  <td class="text-center myFont">3</td>
+                  <td class="text-center myFont">IP addresses</td>
+              </tr>
+              <tr>
+                  <td class="text-center bg-light myFont" id="mj-english">English</td>
+                  <td class="text-center myFont">1000</td>
+                  <td class="text-center myFont">Exposition and Argumentation</td>
+                  <td class="text-center myFont">Peter Lang</td>
+                  <td class="text-center myFont">Learn to form arguments in a written format.</td>
+                  <td class="text-center myFont">A</td>
+                  <td class="text-center myFont">3</td>
+                  <td class="text-center myFont">College level writing</td>
+              </tr>
+          </tbody>
+      </table>
+      <div id="threeCards">
+          <div class="row">
+          <!-- Start of code from reference 2 -->
+          <div class="card text-white bg-dark mx-auto mb-3 myCard" id="myCard1">
+              <img class="card-img-top" src="audioViz.png" alt="Mikey Joyce Composite" id="audioViz">
+              <div class="card-body">
+                  <h5 class="card-title">Audio Visualizer</h5>
+                  <p class="card-text">Project created in OOP that visualizes audio on the screen.</p>
+              </div>
+          </div>
+          <div class="card text-white bg-dark mb-3 mx-auto myCard" id="myCard2">
+              <img class="card-img-top" src="business.png" alt="Mikey Joyce Composite">
+              <div class="card-body">
+                  <h5 class="card-title">Mikey Joyce</h5>
+                  <p class="card-text">Computer Scientist</p>
+              </div>
+          </div>
+          <div class="card text-white bg-dark mb-3 mx-auto myCard" id="myCard3">
+              <img class="card-img-top" src="cryptoWatch.png" alt="Mikey Joyce Composite" id="cryptoWatch">
+              <div class="card-body">
+                  <h5 class="card-title">Crypto Watch</h5>
+                  <p class="card-text">Final project created in OOP that gives live data for the top 100 cryptocurrencies.</p>
+              </div>
+          </div>
+          <!-- End of code from reference 2 -->
+          </div>
+      </div>
+  </body>
+</html>

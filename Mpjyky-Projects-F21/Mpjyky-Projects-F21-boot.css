@@ -1,0 +1,78 @@
+/* CSS References :
+        1. https://stackoverflow.com/questions/787839/resize-image-proportionally-with-css
+*/
+
+body{
+    font-family: 'Cairo', sans-serif;
+    background-color: #333940;
+}
+
+.myFont{
+    font-size: 12px;
+}
+
+.myCard{
+    width: 18rem;
+}
+
+/*Start of code taken from reference 1*/
+.tiger{
+    height: auto;
+    width: auto;
+    max-height: 200px;
+    max-width: 200px;
+}
+/*End of code taken from reference 1*/
+
+#myHeading{
+    padding-right: 40px;
+    font-size: 40px;
+}
+
+#myUniversity{
+    padding-bottom: 90px;
+    font-size: 25px;
+}
+
+#myBar{
+    padding-left: 20px;
+}
+
+#myMajor{
+    padding-top:80px;
+    background-color: azure;
+}
+
+#mj-english{
+    color: black;
+}
+
+#threeCards{
+    display: block;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#cryptoWatch{
+    max-width: 60%;
+    max-height: 60%;
+    margin: 0 auto;
+}
+
+#myCard1{
+    margin: 0 auto; 
+    float: none;
+    margin-bottom: 10px; 
+}
+
+#myCard2{
+    margin: 0 auto;
+    float: none; 
+    margin-bottom: 10px;
+}
+
+#myCard3{
+    margin: 0 auto; 
+    float: none; 
+    margin-bottom: 10px; 
+}

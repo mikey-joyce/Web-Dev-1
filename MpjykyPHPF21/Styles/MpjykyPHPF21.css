@@ -1,0 +1,91 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    color: #edf0f1;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    background-color: #24252A;
+}
+
+a, h2{
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    color: #edf0f1;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 1px solid #F1B82D;
+    flex-wrap: wrap;
+}
+
+#navLinks{
+    transition: all 0.3s ease 0s;
+}
+
+#navLinks:hover{
+    color: #F1B82D;
+}
+
+#formWrapper{
+    width: 80%;
+    min-height: 65vh;
+    background-color: #24252A;
+    border: 2px solid #F1B82D;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.mj-select{
+    margin-top: 30px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.mj-buttonHover{
+    padding: 9px 25px;
+    background-color: rgba(241, 184, 45, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+.mj-buttonHover:hover{
+    background-color: rgba(241, 184, 45, 0.8);
+}
+
+input[type="button"], input[type="submit"]{
+    background-color: #F1B82D;
+    color: #24252A;
+    width: 300px;
+    height: 42px;
+}
+
+.mj-textBox{
+    width: 300px;
+    height: 42px;
+    margin: 0 auto;
+    margin-top: 30px;
+}
+
+#dynamicForm{
+    padding-bottom: 30px;
+}

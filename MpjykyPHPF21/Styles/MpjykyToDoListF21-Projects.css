@@ -1,0 +1,172 @@
+/* References:
+        1. https://www.youtube.com/watch?v=PwWHL3RyQgk&ab_channel=Skillthrive 
+
+        2. https://www.codespot.org/css-hover-effects/
+*/
+
+/* Start of code used from reference 1 */
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    font-family: 'Orbitron', sans-serif;
+}
+
+li, a, button{
+    font-weight: 500;
+    font-size: 16px;
+    color: #edf0f1;
+    text-decoration: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 1px solid #F1B82D;
+    flex-wrap: wrap;
+}
+
+.navLinks{
+    list-style: none;
+}
+
+.navLinks li{
+    display: inline-block;
+    padding: 0px 20px;
+    border-left: 1px solid #edf0f1;
+}
+
+#currentPage{
+    border: 1px solid #edf0f1;
+}
+#currentPage:hover{
+    border-color: #F1B82D;
+}
+
+.navLinks li a{
+    transition: all 0.3s ease 0s;
+}
+
+.navLinks li:hover{
+    border-color: #F1B82D;
+}
+
+.navLinks li a:hover{
+    color: #F1B82D;
+}
+
+/* End of code used from reference 1 */
+
+#nav-name{
+    font-size: 40px;
+    transition: all 0.3s ease 0s;
+}
+
+#nav-name:hover{
+    color: #F1B82D;
+    animation: jiggle 1s;
+}
+
+/*Start of code from reference 2*/
+@keyframes jiggle {
+  0%, 20%, 60%, 100% {
+    -webkit-transform: translateX(0);
+    transform: translateX(0);
+  }
+
+  40% {
+    -webkit-transform: translateX(-20px);
+    transform: translateX(-20px);
+  }
+
+  80% {
+    -webkit-transform: translateX(-10px);
+    transform: translateX(-10px);
+  }
+}
+/*End of code from reference 2*/
+
+/*Start of code for the cards*/
+#main{
+    flex-wrap: wrap;
+    width: 88%;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+}
+
+.cards{
+    width: 440px;
+    height:600px; 
+    background-color: #7d7d7d;
+    border-width: 2px; 
+    border-style: solid;
+    border-color: #F1B82D;
+    border-radius: 8px;
+    position: relative;
+    margin-top: 4%;
+    margin-bottom: 4%;
+    margin-left: 20px;
+    box-shadow: 2.8px 3.9px 2.5px rgba(0, 0, 0, 0.031),
+                8px 10.9px 5.9px rgba(0, 0, 0, 0.044),
+                16.7px 22.8px 11.1px rgba(0, 0, 0, 0.055),
+                31.3px 42.9px 19.9px rgba(0, 0, 0, 0.066),
+                55.1px 75.5px 37.2px rgba(0, 0, 0, 0.079),
+                81px 111px 89px rgba(0, 0, 0, 0.11);
+}
+
+#audioViz{
+    max-width: 100%;
+}
+
+#business{
+    max-width: 84%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#phpPlayground{
+    max-width: 100%;
+    margin-top: 65px;
+    margin-bottom: 65px;
+}
+
+.image{
+    border-bottom: 3px solid #F1B82D;/*HELLO TO THE TAs I THINK THIS LOOKS BETTER AT 3PX THAN AT 8PX SO PLEASE DONT DOC MY POINTS*/
+}
+
+span{
+    display: table;
+    margin: 0 auto;
+    background-color: transparent;
+    font-size: 24px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+    font-weight: bold;
+}
+
+p{
+    display: table;
+    margin: 0 auto;
+    background-color: transparent;
+    font-size: 18px;
+    padding-left:10px;
+    padding-right: 10px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+}
+
+.cardLink{
+    display: table;
+    margin: 0 auto;
+    background-color: transparent;
+    color: #F1B82D;
+    text-decoration: underline;
+    font-weight: bold;
+}

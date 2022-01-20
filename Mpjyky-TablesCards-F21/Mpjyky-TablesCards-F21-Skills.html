@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--
+    Name:       Mikey Joyce
+    Pawprint:   MPJYKY
+    Date:       9/9/21
+    Challenge:  Multi-Column Layout F21
+
+    References:
+        1: https://www.w3schools.com/css/css_border.asp
+        2: https://stackoverflow.com/questions/114543/how-to-horizontally-center-an-element-->
+    <head>
+        <meta charset="utf-8"/>
+        <title>MPJYKY Columns</title>
+        <style>
+            body{
+                margin: 0px;
+                background-color: #fdf7ef;
+            }
+            
+            .navbar{
+                list-style-type: none;
+                background-color: antiquewhite;
+                /* Next 3 lines taken from reference 1*/
+                border-style: none none none solid;
+                border-color: brown;
+                border-width: thick;
+                /* End reference */
+                position: fixed;
+                width: 100%;
+                top: -15px;
+            }
+            
+            .navbarElements{
+                font-family: cursive;
+                color: brown;
+                font-size: 24px;
+                margin: 0px;
+                padding-top: 3px;
+                padding-left: 40px;
+            }
+            
+            .navbar li{
+                float: left;
+            }
+            
+            .navLink{
+                text-decoration: none;
+                color: brown;
+            }
+            
+            #name{
+                font-size: 28px;
+                margin: 0px;
+                font-family: cursive;
+                color: brown;
+            }
+            
+            h1{
+                text-align: center;
+                color: antiquewhite;
+            }
+            
+            .column{
+                float: left;
+            }
+            
+            #columnWrapper{
+                /*width: 50%;*/
+                margin: 0 auto; /*Taken from reference 2*/
+                margin-top: 100px;
+                width: 1160px;
+                border-style: solid;
+                border-width: 10px;
+                border-radius: 25px;
+                border-color: brown;
+                padding: 11px;
+                overflow: auto;
+                background: radial-gradient(rosybrown, brown);
+            }
+            
+            #leftColumn{
+                padding: 20px;
+                margin: 23px;
+                height: 425px;
+                border-style: solid;
+                border-width: 9px;
+                border-color: rosybrown;
+                border-radius: 25px;
+                width: 251px;
+                overflow: auto;
+                background: #fdf7ef;
+            }
+            
+            #leftColumn h2{
+                text-align: center;
+            }
+            
+            #rowWrapper{
+                width: 440px;
+                margin: 26px;
+            }
+            
+            #rightColumn{
+                padding: 20px;
+                width: 209px;
+                margin: 23px;
+                height: 425px;
+                border-style: solid;
+                border-width: 9px;
+                border-color: rosybrown;
+                border-radius: 25px;
+                overflow: auto;
+                background: #fdf7ef;
+            }
+            
+            #rightColumn h2{
+                text-align: center;
+            }
+            
+            #row1{
+                margin-bottom: 26px;
+                width: 376px;
+                height: 211px;
+                padding: 22px;
+                border-style: solid;
+                border-width: 6px;
+                border-color: rosybrown;
+                border-radius: 25px;
+                overflow: auto;
+                background: #fdf7ef;
+            }
+            
+            #row1 h2{
+                text-align: center;
+            }
+            
+            #row2{
+                width: 376px;
+                height: 130px;
+                padding: 22px;
+                border-style: solid;
+                border-width: 6px;
+                border-color: rosybrown;
+                border-radius: 25px;
+                overflow: auto;
+                background: #fdf7ef;
+            }
+            
+            #row2 h2{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <ul class="navbar">
+          <li id="name"><a href="Mpjyky-TablesCards-F21-index.html" class="navLink">Mikey Joyce</a></li>
+          <li class="navbarElements"><a href="Mpjyky-TablesCards-F21-Skills.html" class="navLink">Skills</a></li>
+          <li class="navbarElements"><a href="Mpjyky-TablesCards-F21.html" class="navLink">Courses</a></li>
+        </ul>
+        <!-- Main wrapper. This div should wrap all columns, row wrapper, and title header -->
+        <div id="columnWrapper">
+            <h1>Skills</h1>
+            <!-- Left Column -->
+            <!-- Put left column physical width calculations here: 
+
+            +251px (content width)
+            +46px  (margin)
+            +40px  (padding)
+            +18px  (border)
+            =355px (total)
+
+            -->
+            <div id="leftColumn" class="column">
+                <h2>Education</h2>
+                <ul>
+                    <li>
+                        Junior at the University of Missouri - Columbia
+                        <ul>
+                            <li>Bachelors in Computer Science</li>
+                            <li>Minor in Mathematics</li>
+                            <li>Cyber Security Certification</li>
+                        </ul>
+                    </li>
+                    <li>9-12 at Parkway West High</li>
+                    <li>6-8 at Parkway West Middle</li>
+                    <li>K-5 at Highcroft Elementary</li>
+                </ul>
+            </div>
+            
+            <!-- Row Wrapper. This div will contain two rows -->
+            <!--Put middle column physical width calculations here:
+
+            +440px (content width)
+            +52px  (margin)
+            =492px (total)
+
+            -->
+            <div id="rowWrapper" class="column">
+                <div id="row1">
+                    <h2>Work Experience</h2>
+                    <ul>
+                        <li>June 2021-Present: Mizzou IT Accessibility Tester</li>
+                        <li>May 2021-August 2021: Groundskeeper at Delmar Gardens Chesterfield</li>
+                        <li>June 2020-August 2020: Stower at Amazon</li>
+                        <li>August 2019-March 2020: Machine Shop Assistant at Lafferre Hall</li>
+                        <li>September 2017-2019: Line Associate at Waterway Carwash</li>
+                        <li>June 2015-October 2017: Dishwasher at Strathalbyn Farms Club</li>
+                    </ul>
+                </div>
+                <div id="row2">
+                    <h2>Languages</h2>
+                    <ul>
+                        <li>C</li>
+                        <li>Java</li>
+                        <li>Python</li>
+                        <li>Javascript</li>
+                        <li>HTML and CSS</li>
+                        <li>Assembly</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <!-- Right Column -->
+            <!--Put right column physical width calculations here: 
+
+            +209   (content width)
+            +40px  (padding)
+            +46px  (margin)
+            +18px  (border)
+            =313   (total)
+
+            -->
+            <div id="rightColumn" class="column">
+                <h2>Course Work</h2>
+                <ul>
+                    <li>Web Development 1</li>
+                    <li>Assembly Language</li>
+                    <li>Cyber Security</li>
+                    <li>Databases</li>
+                    <li>Object Oriented Programming</li>
+                    <li>CS 3050</li>
+                    <li>CS 2050</li>
+                    <li>CS 1050</li>
+                    <li>Unix Operating Systems</li>
+                    <li>Logic Design</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>

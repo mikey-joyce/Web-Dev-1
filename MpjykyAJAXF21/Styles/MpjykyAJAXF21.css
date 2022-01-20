@@ -1,0 +1,207 @@
+/* References: 
+        1. https://tobiasahlin.com/moving-letters/#7 
+        2. https://www.youtube.com/watch?v=gvPyJ0rc944&ab_channel=FollowAndrew */
+
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    background-color: #24252A;
+    color: #edf0f1;
+    font-family: 'Orbitron', sans-serif;
+}
+
+body{
+    background-color: #24252A;
+}
+
+a, h2, button{
+    font-weight: 500;
+    font-size: 24px;
+    text-decoration: none;
+    color: #edf0f1;
+}
+
+h2{
+    font-size: 30px;
+    font-weight: bolder;
+    padding-top: 5px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 30px 10%;
+    border-bottom: 1px solid #F1B82D;
+    flex-wrap: wrap;
+}
+
+#navLinks{
+    transition: all 0.3s ease 0s;
+}
+
+#navLinks:hover{
+    color: #F1B82D;
+}
+
+.mj-span{
+    color: #24252A;
+}
+
+#mj-form{
+    max-width: 80%;
+    margin: 0 auto;
+    margin-top: 20px;
+    padding-bottom: 20px;
+    border-bottom:1px solid #F1B82D;
+}
+
+.mj-control{
+    color: gray;
+}
+
+#mj-gallery{
+    margin-top: 15px;
+}
+
+/* Start of code used from reference 1 */
+.mj-galleryTitle{
+    text-align: center;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+.letter, .mj-galleryTitle{
+    display: inline-block;
+    line-height: 1em;
+}
+
+.mj-galleryTitle, .wrapper{
+    position: relative;
+    display: inline-block;
+}
+
+.mj-galleryTitle{
+    opacity: 1;
+    height: 3px;
+    width: 100%;
+    transform-origin: 0 0;
+}
+/* End of code used from reference 1 */
+
+.active{
+    padding-bottom: 1px;
+    border-bottom:1px solid #F1B82D;
+}
+
+.mj-buttonHover{
+    padding: 9px 25px;
+    background-color: rgba(241, 184, 45, 1);
+    border: none;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: black;
+}
+
+.mj-buttonHover:hover{
+    background-color: rgba(241, 184, 45, 0.8);
+}
+
+/* Start of code from reference 2 */
+#mj-container{
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 100px 150px;
+    grid-gap: 10px;
+    margin: 0 auto;
+    margin-top: 15px;
+    width: 80%;
+    grid-auto-flow: dense;
+}
+
+.gallery-item{
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.gallery-item .image{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+
+.gallery-item .image img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+    cursor: pointer;
+    transition: 0.5s ease-in-out;
+}
+
+.gallery-item:hover .image img{
+    transform: scale(1.5);
+}
+
+.col-span0{
+    grid-column: span 1;
+}
+
+.col-span1{
+    grid-column: span 2;
+}
+
+.col-span2{
+    grid-column: span 3;
+}
+
+.col-span3{
+    grid-column: span 4;
+}
+
+.col-span4{
+    grid-column: span 5;
+}
+
+.col-span5{
+    grid-column: span 6;
+}
+
+.row-span0{
+    grid-row: span 1;
+}
+
+.row-span1{
+    grid-row: span 2;
+}
+
+.row-span2{
+    grid-row: span 3;
+}
+
+.row-span3{
+    grid-row: span 4;
+}
+
+.row-span4{
+    grid-row: span 5;
+}
+
+.row-span5{
+    grid-row: span 6;
+}
+
+@media screen and (max-width: 500px){
+    #mj-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .col-span1, .col-span2, .col-span3, .col-span4, .col-span5, .colspan6{
+        grid-column: span 1;
+    }
+}
+/* End of code from reference 2 */

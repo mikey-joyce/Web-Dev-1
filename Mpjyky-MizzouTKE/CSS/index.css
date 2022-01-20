@@ -1,0 +1,1515 @@
+/* References:
+        1. https://www.youtube.com/watch?v=flItyHiDm7E&ab_channel=codefoxx 
+        2. https://www.youtube.com/watch?v=zdA3qZNH1vc&ab_channel=CodeOpacity
+        3. https://www.youtube.com/watch?v=JmNcErI30Ec&ab_channel=CodingCirculate
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+.footer-content{
+    color: white;
+}
+
+html, body{
+    max-width: 100%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+/* Start of code used from reference 1 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #24252a;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+a{
+    background: transparent;
+}
+
+a:hover{
+    color: white;
+}
+
+/* Sticky scroll */
+header{
+    padding: 30px 30px;
+    border-bottom: 1px solid #AD2624;
+    transition: all 0.3s ease;
+}
+
+.hide{
+    top: -70px; 
+}
+
+ul{
+    padding-top: 20px;
+}
+
+#nav_logo{
+    width: 500px;
+    max-width: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#nav_logo:hover{
+    opacity: 60%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    font-size: 25px;
+}
+
+#account{
+    width: 38px;
+    transition: all 0.3s ease 0s;
+}
+
+#account:hover{
+    opacity: 60%;
+}
+
+.linkHov{
+    transition: 0.7s ease;
+}
+
+.linkHov:hover{
+    color: #AD2624;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+#contactButton, #recruitment-submit, .newsletter-download, #alumni-contact-submit{
+    padding: 9px 25px;
+    background-color: rgba(173, 38, 36, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+    width: 100%;
+}
+
+.newsletter-download{
+    text-align: center;
+}
+
+#contactButton:hover, #recruitment-submit:hover, .newsletter-download:hover, #alumni-contact-submit:hover{
+    background-color: rgba(173, 38, 36, 0.7);
+}
+/* End of code used from reference 1 */ 
+
+/* Start of code used from reference 2 */
+footer{
+    border-top: 2px solid #AD2624;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: white;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 35px;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a i{
+    font-size: 1.5rem;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter, .profile-email{
+    transition: color 0.4s ease;
+    cursor: pointer;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover, .profile-email:hover{
+    color: #AD2624;
+}
+
+.footer-bottom{
+    color: white;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+/* End of code used from reference 2 */
+
+/* Start of code used from reference 3 */
+body{
+    background-color: #24252a;
+    height: 100vh;
+    overflow-x: hidden;
+}
+
+#home{
+    color: white;
+    width: auto;
+    height: 700px;
+    text-align: center;
+    padding-bottom:100px;
+    background-color: #24252a;
+}
+
+.slider{
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotate 30s linear infinite;
+    margin: 0 auto;
+    background-color: transparent;
+}
+
+@keyframes rotate{
+    0%{
+        transform: perspective(1000px) rotateY(0deg);
+    }
+
+    100%{
+        transform: perspective(1000px) rotateY(360deg);
+    }
+}
+
+.slider span{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transform-origin: center;
+    transform-style: preserve-3d;
+    transform: rotateY(calc(var(--i)*45deg)) translateZ(350px);
+    background-color: transparent;
+}
+
+.slider span img{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    object-fit: cover;
+    transition: 2s;
+}
+
+.slider span:hover img{
+    transform: translateY(-50px) scale(1.2);
+    cursor: pointer;
+}
+/* End of code used from reference 3 */
+
+#home-heading{
+    font-size: 70px;
+    background-color: transparent;
+    padding-top: 100px;
+}
+
+#home-quote{
+    opacity: 80%;
+    font-style: italic;
+    background-color: transparent;
+    padding-top:50px;
+    padding-bottom: 100px;
+    font-size: 17px;
+}
+
+#reagan{
+    color: #AD2624;
+    font-size: larger;
+    font-weight: bolder;
+    background-color: transparent;
+}
+
+section{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+}
+
+#about{
+    height: 200vh;
+}
+
+#my-contact{
+    background: transparent;
+}
+
+#about, #recruitment, #alumni, #contact{
+    margin-top: 50px;
+}
+
+#home-background-image{
+    width: 100%;
+    height: 50vh;
+    background: url('../Assets/wholeChapter_opaque.png') no-repeat center center/cover;
+    background-color: #24252a;
+}
+
+.slider{
+    border-top: 75px solid transparent;
+    width: 10%;
+    height: 100%;
+}
+
+#about-target, #recruitment-target, #alumni-target, #contact-target{
+    height: 20px;
+}
+
+#about-heading, #recruitment-heading, #alumni-heading, #contact-heading{
+    text-align: center;
+    border-bottom: 1px solid #AD2624;
+    width: 250px;
+    margin: 0 auto;
+    font-size: 50px;
+}
+
+#recruitment-heading{
+    padding-top:40px;
+    width: 300px;
+}
+
+#about-text-container{
+    padding-top: 50px;
+}
+
+#academics-container{
+    padding-top: 50px;
+}
+
+.about-text{
+    font-size: 20px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+#about-body{
+    display: flex;
+    flex-direction: column;
+}
+
+#about-philanthropy{
+    padding-left: 200px;
+    padding-top: 30px;
+    width: 450px;
+    border-bottom: 1px solid #AD2624;
+}
+
+#about-social{
+    text-align: right;
+    padding-right: 200px;
+    padding-top: 30px;
+    border-bottom: 1px solid #AD2624;
+    width: 350px;
+    float: right;
+}
+
+#about-academics{
+    text-align: center;
+    padding-top:50px;
+    border-bottom: 1px solid #AD2624;
+    width: 250px;
+    margin: 0 auto;
+}
+
+#about-philanthropy h2, #about-social h2, #about-academics h2{
+    font-size: 35px;
+}
+
+#about-philanthropy2{
+    padding-left: 275px;
+    padding-right: 275px;
+    padding-top: 30px;
+    display: flex;
+}
+
+#about-social2{
+    padding-left: 275px;
+    padding-right: 275px;
+    padding-top: 80px;
+}
+
+#about-academics2{
+    margin: 0 auto;
+    padding-top: 50px;
+    height: 1000px;
+    width: 1000px;
+}
+
+#about-academics3{
+    text-align: center;
+    padding-top:50px;
+}
+
+#about-academics3 a{
+    color: #8E76FF;
+    text-decoration: underline;
+    font-weight: bolder;
+}
+
+#phil-card1{
+    width: 50%;
+    font-size: 15px;
+}
+
+#phil-card1 h3{
+    font-size: 25px;
+}
+
+#phil-card2{
+    padding-left: 100px;
+    width: 50%;
+}
+
+#social-card1{
+    width: 50%;
+    float: left;
+    padding-left: 30px;
+    padding-top: 50px;
+    background: transparent;
+    font-size: 15px;
+}
+
+#social-card1 p{
+    background: transparent;
+}
+
+#social-card2{
+    width: 50%;
+    float: left;
+    padding-right: 20px;
+}
+
+#tke-stjude, #social-picture{
+    width: 500px;
+}
+
+#makeChange{
+    font-style: italic;
+    opacity: 60%;
+}
+
+#line-chart{
+    width: 1000px;
+}
+
+#recruitment{
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#recruitment h1, #recruitment form{
+    text-align: center;
+    z-index: 1;
+    background-color: transparent;
+}
+
+#playpause{
+    cursor: pointer;
+    width: 60px;
+    z-index: 300;
+    background: transparent;
+}
+
+/* For keyboard accessibility standards */
+
+#playpause:focus/*, input:focus, button:focus, a:focus*/{
+    outline: 2px solid #8E76FF;
+}
+
+#video-buttons{
+    background: transparent;
+    position: absolute;
+    z-index: 1;
+    padding-top: 790px;
+}
+
+#recruitment form{
+    margin-bottom: 200px;
+}
+
+#recruitment h1{
+    margin-top: 20px;
+}
+
+#recruitment-contact{
+    z-index: 1;
+    background: transparent;
+    margin-top: 10px;
+}
+
+#recruitment-contact a{
+    text-decoration: underline;
+    background: transparent;
+    color:#8E76FF;
+    font-weight: bolder;
+}
+
+#video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+}
+
+#recruitment-form, #alumni-contact-form{
+    padding-top: 25px;
+    width: 50vw;
+}
+
+#recruitment-form input, #recruitment-form select, #alumni-contact-form input{
+    margin-bottom: 20px;
+}
+
+video{
+    object-fit: cover;
+    opacity: 70%;
+    width: 100%;
+    height: 100vh;
+}
+
+#alumni-top-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+#nf-container{
+    width: 300px;
+}
+
+#events-container{
+    width: 400px;
+    text-align: center;
+}
+
+#newsletter-form select, .newsletter-download, #newsletter-heading, #events-container{
+    margin-top:25px;
+}
+
+#events-container{
+    margin-top:40px;
+}
+
+#newsletter-heading{
+    font-size: 24px;
+    text-align: center;
+}
+
+#events-container h2{
+    font-size: 25px;
+}
+
+.events-h3{
+    font-size: 20px;
+    color: #AD2624;
+}
+
+#alumni-contact-container{
+    margin: 0 auto;
+    text-align: center;
+    padding-top: 25px;
+}
+
+#alumni-contact-form{
+    display: inline-block;
+}
+
+#alumni-contact-heading{
+    font-size: 35px;
+}
+
+#alumni-contact{
+    padding-top: 20px;
+    font-size: 15px;
+}
+
+#alumni-contact a{
+    text-decoration: underline;
+    color: #8E76FF;
+}
+
+.contact-profile-container{
+    display: flex;
+    align-items: center;
+    justify-content: left;
+    width: 30vw;
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.contact-images{
+    margin-right: 20px;
+}
+
+.profile-name{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-right: 25px;
+}
+
+.profile-name h3{
+    border-bottom: 1px solid #AD2624;
+}
+
+.profile-name p{
+    margin-top: -7px;
+}
+
+.profile-information{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    font-size: 13px;
+    margin-top: 10px;
+}
+
+.profile-information p{
+    margin-bottom: 0;
+}
+
+.contact-images img{
+    width: 75px;
+    border-radius: 50px;
+}
+
+.contact-profile{
+    display: flex;
+}
+
+.profile-insta{
+    font-size: 20px;
+}
+
+#officers-container, #chairmen-container{
+    display: flex;
+}
+
+#contact-left{
+    margin-top: 25px;
+    width: 60vw;
+    text-align: center;
+}
+
+#chairman-heading{
+    margin-top: 25px;
+}
+
+#recruitment-profile-name{
+    margin-top: 15px;
+}
+
+#recruitment-profile-name h3{
+    font-size: 15px;
+}
+
+#risk-profile-name{
+    margin-top: 10px;
+}
+
+#risk-profile-name h3{
+    font-size: 18px;
+}
+
+#vice-profile-name{
+    margin-top: 12px;
+}
+
+#vice-profile-name h3{
+    font-size: 18px;
+}
+
+#vice-profile-name p{
+    font-size: 13px;
+}
+
+#newmem-profile-name{
+    margin-top: 18px;
+}
+
+#newmem-profile-name h3{
+    font-size: 11px;
+}
+
+#houseman-profile-name{
+    margin-top: 13px;
+}
+
+#houseman-profile-name h3{
+    font-size: 16px;
+}
+
+
+#brotherhood-profile-name{
+    margin-top: 8px;
+}
+
+#brotherhood-profile-name h3{
+    font-size: 20px;
+}
+
+#brotherhood-profile-name p{
+    font-size: 13px;
+}
+
+#exphil-profile-name{
+    margin-top: 16px;
+}
+
+#exphil-profile-name h3{
+    font-size: 12px;
+}
+
+#exphil-profile-name p{
+    font-size: 14px;
+}
+
+#accredidation-profile-name{
+    margin-top: 12px;
+}
+
+#accredidation-profile-name h3, #pub-profile-name h3{
+    font-size: 17px;
+}
+
+#accredidation-profile-name p{
+    font-size: 15px;
+}
+
+#intphil-profile-name{
+    margin-top: 15px;
+}
+
+#intphil-profile-name h3{
+    font-size: 13px;
+}
+
+#pub-profile-name{
+    margin-top: 13px;
+}
+
+#contact-body{
+    display: flex;
+}
+
+#contact-right{
+    margin-top: 100px;
+    margin-left: 75px;
+}
+
+#contact-address{
+    text-align: center;
+}
+
+#contact-address p{
+    margin-bottom: 0px;
+}
+
+#contact-map{
+    margin-top: 20px;
+}
+
+#house-map{
+    width: 500px;
+    height: 375px;
+    border-radius: 25px;
+}
+
+#newsletter-error-field{
+    color: #8E76FF;
+}
+
+@media(max-width: 1550px){
+    #social-picture{
+        width: 475px;
+    }
+}
+
+@media(max-width: 1500px){
+    #contact-right{
+        margin-top: 200px;
+        margin-left: 120px;
+    }
+
+    #house-map{
+        width: 400px;
+        height: 300px;
+    }
+
+    .navLinks{
+        font-size: 20px;
+    }
+
+    #about-heading, #recruitment-heading, #alumni-heading, #contact-heading{
+        font-size: 40px;
+    }
+
+    .about-text{
+        font-size: 15px;
+    }
+
+    #about-philanthropy{
+        width: 400px;
+    }
+
+    #about-social{
+        width: 320px;
+    }
+
+    #about-philanthropy h2, #about-social h2, #about-academics h2{
+        font-size: 30px;
+    }
+
+    #about-philanthropy2{
+        padding: 0 225px;
+        padding-top: 30px;
+    }
+
+    #about-social2{
+        padding: 0 225px;
+        padding-top: 80px;
+    }
+
+    #phil-card1 h3{
+        font-size: 22px;
+    }
+
+    #phil-card2{
+        padding-left: 75px;
+    }
+}
+
+@media(max-width: 1400px){
+    #contact{
+        height: 145vh;
+    }
+
+    .contact-profile-container{
+        margin-left: 20px;
+        width: 40vw;
+    }
+
+    #chairmen-left, #officers-left{
+        margin-left: -150px;
+    }
+
+    #chairmen-right, #officers-right{
+        margin-left: 75px;
+    }
+
+    #contact-body{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #contact-right{
+        margin-top: 25px;
+        padding-right: 120px;
+    }
+
+    #social-picture{
+        width: 425px;
+    }
+
+    #social-card2{
+        padding-top: 50px;
+    }
+}
+
+@media(max-width: 1350px){
+    #social-picture{
+        width: 400px;
+    }
+}
+
+/* Start of code used from reference 1*/
+@media(max-width: 1200px){
+    #about-academics2{
+        height: 750px;
+        width: 750px;
+    }
+
+    #social-card2{
+        padding-top: 0px;
+    }
+
+    #phil-card2{
+        padding-left: 50px;
+    }
+
+    #about-philanthropy2{
+        padding: 0 150px;
+        padding-top: 30px;
+    }
+
+    #about-social2{
+        padding: 0 150px;
+        padding-top: 80px;
+    }
+
+    #tke-stjude, #social-picture{
+        width: 375px;
+    }
+
+    #phil-card1 h3{
+        font-size: 17px;
+    }
+
+    #phil-card1 p, #social-card1{
+        font-size: 10px;
+    }
+
+    #about-philanthropy{
+        width: 375px;
+    }
+
+    #about-social{
+        width: 300px;
+    }
+
+    #about-philanthropy h2, #about-social h2, #about-academics h2{
+        font-size: 25px;
+    }
+
+    #about-heading, #recruitment-heading, #alumni-heading, #contact-heading{
+        font-size: 30px;
+        width: 200px;
+    }
+
+    #about-academics{
+        width: 200px;
+    }
+
+    .about-text{
+        font-size: 12px;
+    }
+
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navLinks{
+        position: absolute;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        margin-top:-50px;
+        background-color: #24252a;
+        border-bottom: 1px solid #AD2624;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .linkHov{
+        margin: 16px 0;
+    }
+
+    .navLinks.active{
+        left: 0%;
+    }
+
+    #account{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    #home-heading{
+        font-size: 50px;
+    }
+
+    #home-quote{
+        font-size: 12px;
+    }
+
+    .slider span{
+        width: 120px;
+        height: 120px;
+    }
+}
+/* End of code used from reference 1 */
+
+@media(max-width: 1100px){
+    #social-picture{
+        width: 375px;
+    }
+}
+
+@media(max-width: 1000px){
+    #alumni{
+        height: 110vh;
+    }
+
+    #contact{
+        height: 230vh;
+    }
+
+    #officers-container, #chairmen-container{
+        flex-direction: column;
+    }
+
+    .contact-profile-container{
+        margin: 0 auto;
+        width: 40vw;
+    }
+
+    #chairmen-left, #officers-left, #chairmen-right, #officers-right{
+        margin: 0 auto;
+        margin-right: 125px;
+    }
+
+    #phil-card2{
+        padding-left: 10px;
+    }
+
+    #about-philanthropy2{
+        padding: 0 75px;
+        padding-top: 30px;
+    }
+
+    #about-social2{
+        padding: 0 75px;
+        padding-top: 80px;
+    }
+
+    #tke-stjude, #social-picture{
+        width: 325px;
+    }
+}
+
+@media(max-width: 825px){
+    #social-picture{
+        width: 300px;
+    }
+
+    #social-card1{
+        padding-top: 25px;
+    }
+
+    #about-academics2{
+        height: 600px;
+        width: 600px;
+    }
+}
+
+@media(max-width: 700px){
+    #about-academics2{
+        height: 500px;
+        width: 500px;
+    }
+
+    #social-card2{
+        padding-top: 35px;
+    }
+
+    #about-philanthropy2{
+        padding: 0 50px;
+        padding-top: 30px;
+    }
+
+    #about-social2{
+        padding: 0 50px;
+        padding-top: 80px;
+    }
+
+    #tke-stjude, #social-picture{
+        width: 275px;
+    }
+
+    #about-philanthropy{
+        padding-left: 100px;
+        width: 275px;
+    }
+
+    #about-social{
+        padding-right: 100px;
+        width: 200px;
+    }
+
+    .about-text{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+@media(max-width: 600px){
+    #tke-stjude, #social-picture{
+        width: 200px;
+    }
+
+    #about-academics2{
+        height: 400px;
+        width: 400px;
+    }
+}
+
+@media(max-width: 500px){
+    #contact{
+        height: 215vh;
+    }
+
+    #house-map{
+        width: 300px;
+        height: 225px;
+    }
+
+    #chairmen-left, #officers-left, #chairmen-right, #officers-right{
+        margin-left: -75px;
+    }
+
+    #recruitment-contact{
+        font-size: 12px;
+    }
+
+    #about{
+        height: 160vh;
+    }
+
+    #video-buttons{
+        padding-top: 500px;
+    }
+
+    #recruitment-heading{
+        padding-top: 100px;
+    }
+
+    #recruitment-form{
+        padding-top: 0px;
+    }
+
+    #recruitment-form input, #recruitment-form select{
+        width: 200px;
+        height: 25px;
+        margin: 0 auto;
+        margin-bottom: 10px;
+        font-size: 12px;
+    }
+
+    #recruitment-submit{
+        width: 200px;
+    }
+
+    #social-card2{
+        padding-top: 45px;
+    }
+
+    #phil-card1 h3{
+        font-size: 15px;
+    }
+
+    #phil-card1 p, #social-card1{
+        font-size: 8px;
+    }
+
+    #about-philanthropy2{
+        padding: 0 25px;
+        padding-top: 30px;
+    }
+
+    #about-social2{
+        padding: 0 25px;
+        padding-top: 80px;
+    }
+
+    #about-philanthropy{
+        padding-left: 50px;
+        width: 225px;
+    }
+
+    #about-social{
+        padding-right: 50px;
+        width: 150px;
+    }
+
+    .about-text{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    #about-heading, #recruitment-heading, #alumni-heading, #contact-heading{
+        width: 150px;
+    }
+
+    #about-academics{
+        width: 150px;
+    }
+
+    #tke-stjude, #social-picture{
+        width: 175px;
+    }
+}
+
+@media(max-width: 450px){
+    #about{
+        margin-top: -150px;
+    }
+
+    #recruitment, #alumni, #contact{
+        margin-top: 150px;
+    }
+
+    footer{
+        margin-top:400px;
+    }
+}
+
+@media(max-width: 400px){
+    #about-academics2{
+        height: 350px;
+        width: 350px;
+    }
+
+    #home-heading{
+        font-size: 30px;
+        padding-top: 30px;
+    }
+
+    #home-quote{
+        font-size: 10px;
+    }
+
+    #tke-stjude, #social-picture{
+        width: 150px;
+    }
+
+    #social-card2{
+        padding-top: 100px;
+    }
+}
+
+/* Below are media queries for specific devices */
+
+/*  
+    Galaxy Note 20 Linux 
+    Galaxy Note 20 Ultra Linux 
+    Galaxy S20 Ultra Linux 
+*/
+@media(max-width: 412px) and (min-width: 400px){
+    @media(max-height: 915px) and (min-height: 900px){
+        #home{
+            height: 85vh;
+        }
+
+        #about{
+            height: 150vh;
+        }
+
+        #contact{
+            height: 190vh;
+        }
+
+        .profile-name h3{
+            min-width: 100px;
+        }
+    }
+}
+
+/*
+    Galaxy S10/S10+ Linux
+    Galaxy S20 Linux
+*/
+@media(max-width: 360px) and (min-width: 350px){
+    @media(max-height: 800px) and (min-height: 790px){
+        #about{
+            height: 180vh;
+        }
+
+        #alumni{
+            margin-top: 0;
+            height: 120vh;
+        }
+
+        #contact{
+            height: 220vh;
+        }
+
+        .profile-information{
+            margin-left: -20px;
+        }
+    }
+}
+
+/*
+    Galaxy S20+ Linux
+*/
+@media(max-width: 384px) and (min-width: 370px){
+    @media(max-height: 854px) and (min-height: 830px){
+        .profile-information{
+            margin-left: -10px;
+        }
+
+        #alumni{
+            margin-top: 20px;
+        }
+    }
+}
+
+/*
+    iPad
+*/
+@media(max-width: 810px) and (min-width: 800px){
+    @media(max-width: 1080px) and (min-height: 1050px){
+        #home{
+            height: 60vh;
+        }
+
+        #about{
+            height: 130vh;
+        }
+
+        #alumni{
+            height: 80vh;
+        }
+
+        #contact{
+            height: 210vh;
+        }
+    }
+}
+
+/*
+    iPhone 11 Pro
+    iPhone X/XS
+*/
+@media(max-width: 375px) and (min-width: 370px){
+    @media(max-height: 812px) and (min-height: 800px){
+        #alumni{
+            margin-top: 10px;
+        }
+
+        .profile-name h3{
+            min-width: 100px;
+        }
+
+        .profile-information{
+            margin-left: -10px;
+        }
+    }
+}
+
+/*
+    iPhone 11 Pro Max
+    iPhone XS Max
+    iPhone XR
+    iPhone 11
+*/
+@media(max-width: 414px) and (min-width: 410px){
+    @media(max-height: 896px) and (min-height: 890px){
+        #about{
+            margin-top: -10px;
+            height: 150vh;
+        }
+
+        #alumni{
+            margin-top: 10px;
+        }
+
+        #contact{
+            height: 190vh;
+        }
+    }
+}
+
+/*
+    iPhone 12/13 Pro
+*/
+@media(max-width: 390px) and (min-width: 385px){
+    @media(max-height: 844px) and (min-height: 830px){
+        #alumni{
+            margin-top: 10px;
+        }
+
+        .profile-name h3{
+            min-width: 100px;
+        }
+
+        #contact{
+            height: 200vh;
+        }
+    }
+}
+
+/*
+    iPhone 12/13 mini
+*/
+@media(max-width: 375px) and (min-width: 370px){
+    @media(max-height: 812px) and (min-height: 700px){
+        #contact{
+            height: 205vh;
+        }
+    }
+}
+
+/*
+    iPhone 12/13 Pro Max
+*/
+@media(max-width: 428px) and (min-width: 425px){
+    @media(max-height: 926px) and (min-height: 910px){
+        #about{
+            margin-top: 0;
+            height: 140vh;
+        }
+
+        #alumni{
+            margin-top: 10px;
+        }
+
+        .profile-name h3{
+            min-width: 100px;
+        }
+
+        #contact{
+            height: 180vh;
+        }
+    }
+}
+
+/*
+    iPhone SE 2nd gen
+    iPhone 6/7/8
+*/
+@media(max-width: 375px) and (min-width: 370px){
+    @media(max-height: 667px) and (min-height: 655px){
+        #about{
+            height: 200vh;
+        }
+
+        #alumni{
+            margin-top: 10px;
+            height: 145vh;
+        }
+
+        .profile-name h3{
+            min-width: 100px;
+        }
+
+        .profile-name{
+            margin-left: -10px;
+        }
+
+        #contact{
+            height: 240vh;
+        }
+    }
+}
+
+/*
+    iPhone 6/7/8 Plus
+*/
+@media(max-width: 414px) and (min-width: 410px){
+    @media(max-height: 736px) and (min-height: 730px){
+        #about{
+            margin-top: 10px;
+            height: 180vh;
+        }
+
+        #alumni{
+            margin-top: 10px;
+            height: 130vh;
+        }
+
+        .profile-name h3{
+            min-width: 100px;
+        }
+    }
+}
+
+/*
+    Kindle Fire HDX Linux
+*/
+@media(max-width: 800px) and (min-width: 790px){
+    @media(max-height: 1280px) and (min-height: 1260px){
+        #about{
+            margin-top: -60px;
+            height: 125vh;
+        }
+
+        #alumni{
+            height: 80vh;
+        }
+
+        #contact{
+            height: 180vh;
+        }
+    }
+}

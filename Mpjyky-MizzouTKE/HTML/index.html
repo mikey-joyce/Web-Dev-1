@@ -1,0 +1,470 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <script src="https://use.fontawesome.com/e747d8205c.js"></script>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Mizzou TKE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="../Assets/tkeSeal.png" type="image/x-icon">
+        <!-- Bootstrap, style sheet, and font awesome download -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+        <link rel="stylesheet" href="../CSS/index.css">
+        <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+    </head>
+    <body onload="viewPortPlayPause()">
+        <header id="top">
+            <nav>
+                <img src="../Assets/mizzou_teke.svg" alt="TKE Logo Wide" id="nav_logo">
+                <ul class="navLinks">
+                    <li><a href="#about" class="linkHov" id="aboutButton">About</a></li>
+                    <li><a href="#recruitment" class="linkHov" id="recruitmentButton">Recruitment</a></li>
+                    <li><a href="#alumni" class="linkHov" id="alumniButton">Alumni</a></li>
+                    <li><a href="#contact" id="contactButton">Contact</a></li>
+                    <li><a href="../HTML/account.html"><img src="../Assets/account_white.svg" alt="account" id="account"></a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </nav>
+        </header>
+        <section id="home">
+            <div id="home-background-image">
+                <h1 id="home-heading">Tau Kappa Epsilon</h1>
+                <p id="home-quote">&quot;I am proud to be a Teke. For me, TKE has not only been an enjoyable association,​ but also a meaningful aspect of my life.&quot;
+                    <span id="reagan">-Ronald Reagan</span></p>
+            </div>
+            <div class="slider">
+                <span style="--i:1;"><img src="../Assets/slideshow/douglas.jpeg" alt="Whole chapter" onclick="carouselClickable(this)"></span>
+                <span style="--i:2;"><img src="../Assets/slideshow/muck_KDs.jpeg" alt="Member with Kappa Delta sorority girls" onclick="carouselClickable(this)"></span>
+                <span style="--i:3;"><img src="../Assets/slideshow/kappa_klassic.jpeg" alt="Kappa Klassic banner" onclick="carouselClickable(this)"></span>
+                <span style="--i:4;"><img src="../Assets/slideshow/alpha_epsilon_PC.jpeg" alt="Alpha Epsilon Pledge class" onclick="carouselClickable(this)"></span>
+                <span style="--i:5;"><img src="../Assets/slideshow/sorority_basketball.jpeg" alt="Sorority basketball philanthropy event" onclick="carouselClickable(this)"></span>
+                <span style="--i:6;"><img src="../Assets/slideshow/shed_RIP.jpeg" alt="Members by 'the Shed'" onclick="carouselClickable(this)"></span>
+                <span style="--i:7;"><img src="../Assets/slideshow/wiffleball.jpeg" alt="House wiffle ball game" onclick="carouselClickable(this)"></span>
+                <span style="--i:8;"><img src="../Assets/slideshow/housedeck.jpeg" alt="TKE KKG House deck" onclick="carouselClickable(this)"></span>
+            </div>
+        </section>
+        <div id="about-target"></div>
+        <section id="about">
+            <h1 id="about-heading">About Us</h1>
+            <div id="about-text-container">
+                <p class="about-text">The men of Tau Kappa Epsilon-Beta Theta strive to achieve academically while staying actively involved within our community and the University of Missouri's Greek life. We compete in both Homecoming and Greek Week, consistently participate in other sororities’ philanthropy/charity efforts, and compete in fraternal intramural sport leagues offered by the University of Missouri.</p>
+            </div>
+            <div id="about-body">
+                <div id="philanthropy-container">
+                    <div id="about-philanthropy">
+                        <h2>Philanthropy</h2>
+                    </div>
+                    <div id="about-philanthropy2">
+                        <div id="phil-card1">
+                            <h3>St. Jude Children's Research Hospital</h3>
+                            <p id="makeChange">TKE's Make A Change</p>
+                            <p>Tau Kappa Epsilon's nationwide charity is focsued on St. Jude Children's Research Hospital, founded by TKE brother Danny Thomas. TKE officially joined the fight against childhood cancer with St. Jude Children's Research Hospital in 1978. And 40 years later, TKE still continues to support this amazing cause.</p>
+                        </div>
+                        <div id="phil-card2"><img src="../Assets/StJude-TKE_Partnership-Logo_4C.png" alt="Tke and St Jude logo" id="tke-stjude"></div>
+                    </div>
+                </div>
+                <div id="social-container">
+                    <div id="about-social">
+                        <h2>Social</h2>
+                    </div>
+                    <div id="about-social2">
+                        <div id="social-card2"><img src="../Assets/social.jpeg" alt="Members at a social" id="social-picture"></div>
+                        <div id="social-card1">
+                            <p>Tau Kappa Epsilon hosts socials in order to get better acquainted with the lovely sororities that populate The University of Missouri's Greek life. We plan a marriage and divorce party each semester intending to celebrate the start and successful run of our pairing in conjunction with Homecoming and Greek week.</p>
+                            <p>The Beta Theta chapter organizes our Red Carnation Ball annually every spring to where we hold an initial election for the location of our formal event. Each member invites a date to our formal dinner ceremony where members are awarded for their individual merits. These awards for chapter excellence include most outstanding new member and the three cardinal principles of Tau Kappa Epsilon - love, charity, and esteem.</p>
+                        </div>
+                    </div>
+                </div>
+                <div id="academics-container">
+                    <div id="about-academics">
+                        <h2>Academics</h2>
+                    </div>
+                    <div id="about-academics3">
+                        <p>For more information <a href="https://missouri.campuslabs.com/engage/organization/fraternity-and-sorority-life/documents" target="_blank">click here</a></p>
+                    </div>
+                    <div id="about-academics2">
+                        <canvas id="line-chart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div id="recruitment-target"></div>
+        <section id="recruitment">
+            <h1 id="recruitment-heading">Recruitment</h1>
+            <p id="recruitment-contact">For more information contact our Recruitment Chair: <a href="https://www.instagram.com/quentinmoore_/" target="_blank">Quentin Moore</a></p>
+            <form id="recruitment-form" action="https://formsubmit.co/joyce.mp2019@gmail.com" method="POST">
+                <input type="hidden" name="_next" value="http://34.135.53.65/HTML/index.html#recruitment">
+                <input type="hidden" name="_subject" value="New submission!">
+                <input class="form-control" type="text" name="Name" placeholder="Full Name" required>
+                <input class="form-control" type="text" name="Phone Number" placeholder="Phone Number">
+                <input class="form-control" type="email" name="Email" placeholder="Email address" required>
+                <input class="form-control" type="text" name="High School" placeholder="High School">
+                <input class="form-control" type="text" name="GPA" placeholder="GPA">
+                <select class="form-control" name="Exam">
+                    <option>ACT</option>
+                    <option>SAT</option>
+                  </select>
+                <input class="form-control" type="text" name="Score" placeholder="ACT Score" id="placementExam">
+                <input class="form-control" type="text" name="Instagram" placeholder="Instagram Username" required>
+                <input class="form-control" type="text" name="Major" placeholder="Major">
+                <input class="form-control" type="text" name="Reference" placeholder="Reference">
+                <button type="submit" id="recruitment-submit">Submit</button>
+            </form>
+            <div id="video-buttons">
+                <img src="../Assets/mute.svg" alt="play/pause" id="playpause" onclick="pausePlay(); togglePause();" tabindex="0">
+            </div>
+            <div id="video-container">
+                <video loop muted id="mj-video">
+                    <source src="../Assets/newLevel.mp4" type="video/mp4">
+                </video>
+            </div>
+        </section>
+        <div id="alumni-target"></div>
+        <section id="alumni">
+            <h1 id="alumni-heading">Alumni</h1>
+            <div id="alumni-top-container">
+                <div id="nf-container">
+                    <h2 id="newsletter-heading">The Beta-Theta Connection</h2>
+                    <form id="newsletter-form">
+                        <select class="form-control" id="newsletter-select" onchange="updateDownloadFile()">
+                            <option>Winter-2020</option>
+                            <option>Fall-2020</option>
+                            <option>Fall-2019</option>
+                            <option>Spring-2019</option>
+                            <option>Winter-2018</option>
+                            <option>Fall-2018</option>
+                            <option>Spring-2018</option>
+                        </select>
+                        <div class="newsletter-download"><a href="../Assets/newsletters/Winter-2020.pdf" download id="download-source">⇓ Download</a></div>
+                    </form>
+                    <p id="newletter-error-field"></p>
+                </div>
+                <div id="events-container">
+                    <h2>Upcoming Events</h2>
+                    <h3 class="events-h3">Alumni Weekend</h3>
+                    <p>Save the date: TBD</p>
+                    <h3 class="events-h3">Moms Weekend</h3>
+                    <p>Save the date: TBD</p>
+                </div>
+            </div>
+            <div id="alumni-contact-container">
+                <h2 id="alumni-contact-heading">Alumni Contact Form</h2>
+                <p id="alumni-contact">For more information contact our Histor: <a href="mailto:tkebetathetahistor@gmail.com">Tyler Hogue</a></p>
+                <form id="alumni-contact-form" action="https://formsubmit.co/joyce.mp2019@gmail.com" method="POST">
+                    <input type="hidden" name="_next" value="http://34.135.53.65/HTML/index.html#alumni">
+                    <input type="hidden" name="_subject" value="New submission!">
+                    <input class="form-control" type="text" name="Name" placeholder="Full Name" required>
+                    <input class="form-control" type="email" name="Email" placeholder="Email address" required>
+                    <input class="form-control" type="text" name="Street Address" placeholder="Street Address" required>
+                    <input class="form-control" type="text" name="City" placeholder="City" required>
+                    <input class="form-control" type="text" name="State" placeholder="State" required>
+                    <input class="form-control" type="text" name="Zip Code" placeholder="Zip Code" required>
+                    <button id="alumni-contact-submit" type="submit">Submit</button>
+                </form>
+                <!--<p>Want to make a donation? Click <a href="#" target="_blank">here</a></p>-->
+            </div>
+        </section>
+        <div id="contact-target"></div>
+        <section id="contact">
+            <h1 id="contact-heading">Contact Us</h1>
+            <div id="contact-body">
+                <div id="contact-left">
+                    <h2>Officers</h2>
+                    <div id="officers-container">
+                        <div id="officers-left">
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/campbell.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name">
+                                        <h3>President</h3>
+                                        <p>Campbell Breiler</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(773) 372-5913</p>
+                                        <p><a href="mailto:ccbwfk@umsystem.edu" class="profile-email">ccbwfk@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/campbellbreiler/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/quentin.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="recruitment-profile-name">
+                                        <h3>Recruitment Chair</h3>
+                                        <p>Quentin Moore</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(630) 631-9263</p>
+                                        <p><a href="mailto:qmm4mz@umsystem.edu" class="profile-email">qmm4mz@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/quentinmoore_/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/trent.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name">
+                                        <h3>Secretary</h3>
+                                        <p>Trent Dunn</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(760) 579-8253</p>
+                                        <p><a href="mailto:twdm7x@umsystem.edu" class="profile-email">twdm7x@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/trentdunnn/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/hogue.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name">
+                                        <h3>Historian</h3>
+                                        <p>Tyler Hogue</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(224) 645-9778</p>
+                                        <p><a href="mailto:tjhh47@umsystem.edu" class="profile-email">tjhh47@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/hoguer_96/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/mcgorry.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="risk-profile-name">
+                                        <h3>Risk Manager</h3>
+                                        <p>Nate McGorry</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(636) 575-5375</p>
+                                        <p><a href="mailto:nmwz2@umsystem.edu" class="profile-email">nmwz2@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/nate_mcgorry/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="officers-right">
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/sol.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="vice-profile-name">
+                                        <h3>Vice President</h3>
+                                        <p>Solomon DellaPenna</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(816) 835-6196</p>
+                                        <p><a href="mailto:sldn3f@umsystem.edu" class="profile-email">sldn3f@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/soldellapenna/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/max.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name">
+                                        <h3>Treasurer</h3>
+                                        <p>Max Loy</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(573) 825-1660</p>
+                                        <p><a href="mailto:mel2m2@umsystem.edu" class="profile-email">mel2m2@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/maxloy_/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/kyle.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name">
+                                        <h3>Chaplain</h3>
+                                        <p>Kyle Kroger</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(630) 750-4297</p>
+                                        <p><a href="mailto:kkz6z@umsystem.edu" class="profile-email">kkz6z@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/kyle_kroeger/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/shaun.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="newmem-profile-name">
+                                        <h3>New Member Educator</h3>
+                                        <p>Shaun Grady</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(626) 733-7547</p>
+                                        <p><a href="mailto:sghrm@umsystem.edu" class="profile-email">sghrm@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/shaun.grady/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <!--
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/business.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="houseman-profile-name">
+                                        <h3>House Manager</h3>
+                                        <p>N/A</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>N/A</p>
+                                        <p class="profile-email">N/A</p>
+                                        <a href="https://www.instagram.com/mizzoutke/?hl=en" target="_blank"><i class="fa fa-instagram" id="profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            -->
+                        </div>
+                    </div>
+                    <!--
+                        President
+                        Vice President
+                        Recruitment Chair
+                        Secretary
+                        Treasurer
+                        Historian
+                        Chaplain
+                        Risk Manager
+                        New Member Educator
+                    -->
+                    <h2 id="chairman-heading">Committee Chairmen</h2>
+                    <div id="chairmen-container">
+                        <div id="chairmen-left">
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/evan.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="brotherhood-profile-name">
+                                        <h3>Brotherhood</h3>
+                                        <p>Evan West</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(760) 846-4558</p>
+                                        <p><a href="mailto:eswm4t@umsystem.edu" class="profile-email">eswm4t@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/evanwest3/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/fauth.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="exphil-profile-name">
+                                        <h3>External Philanthropy</h3>
+                                        <p>Adam Fauth</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(314) 526-1664</p>
+                                        <p><a href="mailto:agfk34@umsystem.edu" class="profile-email">agfk34@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/adam_fauth/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/atho.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="accredidation-profile-name">
+                                        <h3>Accredidation</h3>
+                                        <p>Atho Bastas</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(708) 595-0177</p>
+                                        <p><a href="mailto:acbfmf@umsystem.edu" class="profile-email">acbfmf@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/mizzoutke/?hl=en" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                        <div id="chairmen-right">
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/campbell.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="intphil-profile-name">
+                                        <h3>Internal Philanthropy</h3>
+                                        <p>Campbell Breiler</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(773) 372-5913</p>
+                                        <p><a href="mailto:ccbwfk@umsystem.edu" class="profile-email">ccbwfk@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/campbellbreiler/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/kuzma.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name" id="pub-profile-name">
+                                        <h3>Public Relations</h3>
+                                        <p>Jared Kuzma</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(224) 548-5774</p>
+                                        <p><a href="mailto:jjk2qz@umsystem.edu" class="profile-email">jjk2qz@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/jared_kuzma/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                            <div class="contact-profile-container">
+                                <div class="contact-images"><img src="../Assets/profiles/gabe.png" alt="President"></div>
+                                <div class="contact-profile">
+                                    <div class="profile-name">
+                                        <h3>Inclusion</h3>
+                                        <p>Gabe Blancarte</p>
+                                    </div>
+                                    <div class="profile-information">
+                                        <p>(314) 825-1229</p>
+                                        <p><a href="mailto:grb7c5@umsystem.edu" class="profile-email">grb7c5@umsystem.edu</a></p>
+                                        <a href="https://www.instagram.com/gabe_blancarte/" target="_blank"><i class="fa fa-instagram profile-insta"></i></a>
+                                    </div>    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!--
+                        Brotherhood Chair
+                        Internal Philanthropy Chair
+                        External Philanthropy Chair
+                        Accredidation Chair
+                        Public Relations Chair
+                        Inclusion Chair
+                    -->
+                </div>
+                <div id="contact-right">
+                    <div id="contact-address">
+                        <p>Tau Kappa Epsilon</p>
+                        <p>805 Richmond Ave.</p>
+                        <p>Columbia, MO 65201</p>
+                    </div>
+                    <div id="contact-map">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1845.1674456931842!2d-92.33208442125998!3d38.942501715909565!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xbd2f768a6c177af7!2sDelta%20Sigma%20Phi!5e0!3m2!1sen!2sus!4v1638758504684!5m2!1sen!2sus" allowfullscreen="" loading="lazy" id="house-map"></iframe>
+                    </div>
+                </div>
+            </div> 
+        </section>
+        <footer>
+            <div class="footer-content">
+                <h3>Our Socials</h3>
+                <ul class="socials">
+                    <li><a href="https://www.facebook.com/MissouriTKE/" target="_blank"><i class="fa fa-facebook"></i></a></li>
+                    <li><a href="https://twitter.com/mizzoutke" target="_blank"><i class="fa fa-twitter"></i></a></li>
+                    <li><a href="https://www.instagram.com/mizzoutke/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a></li>
+                </ul>
+            </div>
+            <div class="footer-bottom">
+                <p>copyright &copy;2021</p>
+            </div>
+        </footer>
+        <!-- Smoothscroll, ChartJS, Cloudflare, JQuery and Javscript import -->
+        <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll@15.0.0/dist/smooth-scroll.polyfills.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js" integrity="sha512-z4OUqw38qNLpn1libAN9BsoDx6nbNFio5lA6CuTp9NlK83b89hgyCVq+N5FdBJptINztxn1Z3SaKSKUS5UP60Q==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+        <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+        <script src="../JS/index.js" async defer></script>
+    </body>
+</html>

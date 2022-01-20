@@ -1,0 +1,280 @@
+/* References:
+        1. https://www.youtube.com/watch?v=flItyHiDm7E&ab_channel=codefoxx 
+        2. https://www.youtube.com/watch?v=zdA3qZNH1vc&ab_channel=CodeOpacity
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@200&display=swap');
+
+/* Start of code used from reference 1 */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: #24252a;
+    font-family: 'Outfit', sans-serif;
+    color: white;
+}
+
+header{
+    padding: 30px 30px;
+    border-bottom: 2px solid #AD2624;
+}
+
+body{
+    background-color: #24252a;
+}
+
+ul{
+    padding-top: 20px;
+}
+
+#nav_logo{
+    width: 500px;
+    max-width: 50%;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+}
+
+#nav_logo:hover{
+    opacity: 60%;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+}
+
+nav{
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLinks{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px;
+    font-size: 25px;
+}
+
+#account{
+    width: 38px;
+    transition: all 0.3s ease 0s;
+}
+
+#account:hover{
+    opacity: 60%;
+}
+
+.linkHov{
+    transition: 0.7s ease;
+}
+
+.linkHov:hover{
+    color: #AD2624;
+}
+
+.hamburger{
+    display: none;
+    cursor: pointer;
+}
+
+.bar{
+    display: block;
+    width: 25px;
+    height: 3px;
+    margin: 5px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+    background-color: white;
+}
+
+#payment-submit{
+    padding: 9px 25px;
+    background-color: rgba(173, 38, 36, 1);
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    color: white;
+}
+
+#payment-submit:hover{
+    background-color: rgba(173, 38, 36, 0.7);
+}
+
+#main-section{
+    height: 100vh;
+    
+}
+
+#login-form-container{
+    min-width: 40vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+#payment-submit{
+    width: 40vw;
+    margin: 0 auto;
+}
+
+#payment-price{
+    width: 40vw;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+#logout{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #8E76FF;
+    margin-top: 15px;
+}
+
+#smart-button-container div{
+    text-align: center;
+    margin: 0 -100px;
+}
+
+.p-div{
+    visibility: hidden; 
+    color:red; 
+    text-align: center;
+}
+
+#invoiceidDiv{
+    display: none;
+}
+
+#paypal-button-container{
+    margin-top: 0.625rem;
+}
+
+@media(max-width: 1200px){
+    .hamburger{
+        display: block;
+    }
+
+    .hamburger.active .bar:nth-child(2){
+        opacity: 0;
+    }
+    
+    .hamburger.active .bar:nth-child(1){
+        transform: translateY(8px) rotate(45deg);
+    }
+
+    .hamburger.active .bar:nth-child(3){
+        transform: translateY(-8px) rotate(-45deg);
+    }
+
+    .navLinks{
+        position: fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        margin-top:-50px;
+        background-color: #24252a;
+        border-bottom: 2px solid #AD2624;
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .linkHov{
+        margin: 16px 0;
+    }
+
+    .navLinks.active{
+        left: 0;
+    }
+
+    #account{
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+}
+/* End of code used from reference 1 */
+
+@media(max-width: 1500px){
+    .navLinks{
+        font-size: 20px;
+    }
+}
+
+/* Start of code used from reference 2 */
+footer{
+    border-top: 2px solid #AD2624;
+    height: auto;
+    width: 100vw;
+    padding-top: 40px;
+}
+
+.footer-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+.footer-content h3{
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    line-height: 3rem;
+    color: white;
+}
+
+.socials{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-right: 35px;
+}
+
+.socials li{
+    margin: 0 10px;
+}
+
+.socials a i{
+    font-size: 1.5rem;
+}
+
+.fa-facebook, .fa-instagram, .fa-twitter{
+    transition: color 0.4s ease;
+}
+
+.fa-facebook:hover, .fa-twitter:hover, .fa-instagram:hover{
+    color: #AD2624;
+}
+
+#main-section h1{
+    display: none;
+}
+
+.footer-bottom{
+    color: white;
+    width: 100vw;
+    padding: 20px 0;
+    text-align: center;
+}
+/* End of code used from reference 2 */
+
+@media(max-width: 500px){
+    #payment-price{
+        font-size: 10px;
+    }
+}
